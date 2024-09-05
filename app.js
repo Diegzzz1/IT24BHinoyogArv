@@ -102,7 +102,7 @@ let number1 = 12;
 if (number1 % 2 === 1) {
     console.log(number1 + " is Prime Number");
 } else  {
-    console.log(number1 + " is not a Prime Number");
+    console.log(number1 + " is not a prime Number");
 } 
 
 
