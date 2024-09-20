@@ -1,78 +1,202 @@
-body{
-    background-image: url("PHOTOS/BackGround\ 1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+:root {
+  --primary-color: #333;
+  --secondary-color: #fff;
+  --hover-color: rgb(88, 3, 3);
+  --active-color: rgb(54, 54, 1);
 }
-h1 {
-    color: rgb(60, 179, 113), blue;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 100px;
-}.header {
-    overflow: hidden;
-    background-color: pink;
-    /*padding: 20px 10px;*/
-  }
-  
- h2 {
-   text-align: center;
-   font-family: 'Courier New', Courier, monospace;
- }
-  .header img{
-    height: 50px;
-    width: 50px;
-  }
-  
-  
-  /* Style the header links */
-  .header a {
-    float: left;
-    color: white;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-  }
-  
-  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-  .header a.logo {
-    font-size: 25px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Change the background color on mouse-over */
-  .header a:hover {
-    background-color: rgb(88, 3, 3);
-    color: White;
-  }
-  
-  .header a.active {
-    background-color: blue;
-    color: white;
-  }
-  
-  /* Float the link section to the right */
-  .header-Right {
-    float: right;
-  }
 
-  .footer{
-    position:fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(153, 245, 125);
-    color: rgb(13, 151, 75);
-    text-align: center;
+/* General H1 Styling */
+h1 {
+  color: rgb(0, 0, 0);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+}
+
+.header a {
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+}
+
+.header a:hover {
+  background-color: var(--hover-color);
+}
+
+.header a.active {
+  background-color: var(--active-color);
+}
+
+#header-Left {
+  float: left;
+}
+
+#header-Right {
+  float: right;
+}
+
+/* Footer Styling */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Content and Sections Styling */
+#content {
+  color: maroon;
+  text-align: justify;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 15px;
+}
+
+.resume-container,
+.service-container {
+  width: 80%;
+  margin: 20px auto;
+  background-color: var(--secondary-color);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-header,
+.page-title {
+  text-align: center;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+}
+
+.name {
+  font-size: 2em;
+  margin: 0;
+}
+
+.contact-info {
+  font-size: 1em;
+  color: #666;
+}
+
+.section-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 5px;
+}
+
+.skills ul,
+.job ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.job {
+  margin-bottom: 20px;
+}
+
+.job-title {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.job-company,
+.job-duration {
+  font-size: 1em;
+  color: #666;
+}
+
+.education p {
+  margin: 0;
+}
+
+/* Image Section Styling */
+#Pic {
+  text-align: center;
+  margin-top: 20px;
+}
+
+img {
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+#bio p {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-top: 15px;
+}
+
+/* Welcome Section */
+.welcome-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+#intro-text {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+/* Main Content Section */
+#main-content {
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .resume-container,
+  .service-container {
+    width: 95%;
+    padding: 10px;
   }
-  #content{
-    color: maroon;
-    text-align: justify;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 75px;
+  
+  .header a {
+    font-size: 16px;
   }
+}
