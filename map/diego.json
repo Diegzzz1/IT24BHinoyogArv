@@ -1,0 +1,32 @@
+[
+    {
+        "latitude": 8.203298,
+        "longitude": 124.869206,
+        "message": "Parking Lot 1"
+    },
+    {
+        "latitude": 8.204737,
+        "longitude": 124.856543,
+        "message": "Parking Lot 2"
+    },
+    {
+        "latitude": 8.205496,
+        "longitude": 124.857166,
+        "message": "Comfort Room"
+    },
+    {
+        "latitude": 8.205857,
+        "longitude": 124.857519,
+        "message": "Dahilayan Adventure Park"
+    },
+    {
+        "latitude": 8.205082,
+        "longitude": 124.857460,
+        "message": "Picnic Grounds"
+    },
+    {
+        "latitude": 8.202841,
+        "longitude": 124.857423,
+        "message": "Forest Putt Mini Golf"
+    }
+]
