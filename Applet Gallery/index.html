@@ -10,6 +10,38 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <title>Gallery</title>
+    <style>
+        .applet-flex-container {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            margin-top: 2rem;
+            margin-left: 2rem;
+            width: 90%;
+        }
+        .applet-flex-container > div{
+            margin-left: 5rem;
+        }
+        .title{
+            margin-top: 1rem;
+            margin-left: 5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .applet-card{
+          flex: 1 1 20rem; 
+          max-width: 40rem;
+          height: 12rem;
+          margin-bottom: 1rem;
+          box-sizing: border-box;
+        }
+
+    </style>
+
+
+
 </head>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
@@ -44,33 +76,36 @@
 </nav>
 
 <body>
-    <h1 class="title" >Event Driven Programming Library</h1>
+    <h1 class="title">Event Driven Programming Library</h1>
     <div class="applet-flex-container">
-    <div class="card applet-card" >
-        <div class="card-body">
-          <h5 class="card-title">Applet 1 - Basic Events </h5>
-          <p class="card-text">This application contains the basic implementation of DOM events</p>
-          <a href="/Applet 1/index.html" class="btn btn-primary">Go to Applet</a>
+        <div class="card applet-card">
+            <div class="card-body">
+                <h5 class="card-title">Applet 1 - Basic Events </h5>
+                <p class="card-text">This application contains the basic implementation of DOM events</p>
+                <a href="/Applet 1/index.html" class="btn btn-primary">Go to Applet</a>
+            </div>
         </div>
-    </div>
-    
-    
-    <div class="card applet-card" >
-        <div class="card-body">
-          <h5 class="card-title">Leaflet Map</h5>
-          <p class="card-text">This application contains the basic web map</p>
-          <a href="/map/index1.html" class="btn btn-primary">Go to Applet</a>
+
+
+        <div class="card applet-card">
+            <div class="card-body">
+                <h5 class="card-title">Leaflet Map</h5>
+                <p class="card-text">This application contains the basic web map</p>
+                <a href="/map/index1.html" class="btn btn-primary">Go to Applet</a>
+            </div>
         </div>
-      </div>
-      
-      
-      <div class="card applet-card" >
-        <div class="card-body">
-          <h5 class="card-title">Event Button Logger</h5>
-          <p class="card-text">This application applies recording events while using HTML elements such as buttons</p>
-          <a href="/Event-logger/index.html" class="btn btn-primary">Go to Applet</a>
+
+
+        <div class="card applet-card">
+            <div class="card-body">
+                <h5 class="card-title">Event Button Logger</h5>
+                <p class="card-text">This application applies recording events while using HTML elements such as buttons
+                </p>
+                <a href="/Event-logger/index.html" class="btn btn-primary">Go to Applet</a>
+            </div>
         </div>
-      </div>
+
+
 </body>
 
 </html>
