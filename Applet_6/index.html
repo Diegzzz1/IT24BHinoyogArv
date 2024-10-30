@@ -27,6 +27,7 @@
                   <li><a class="dropdown-item" href="/Event-logger/index.html">Event Logger</a></li>
                   <li><a class="dropdown-item" href="/Applet_4/index.html">Applet 4</a></li>
                   <li><a class="dropdown-item" href="/Applet_5/index.html">Applet 5</a></li>
+                  <li><a class="dropdown-item" href="/Applet_6/index.html">Applet 5</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -41,7 +42,18 @@
         </div>
       </nav>
 
-      
+      <div class="container-fluid"  style="max-width: 40%;">
+        <h2 class="text-center">To-Do List</h2>
+        <div class="input-group mb-4">
+            <textarea class="form-control" id="todoInput" placeholder="Add a new task"  rows="3"></textarea>
+            <div class="input-group-append" style="margin-left: .5rem;">
+                <button class="btn btn-primary" id="addButton">Add</button>
+            </div>
+        </div>
+        <ul id="todoList" class="list-group"></ul>
+    </div>
+
+
       
 </body>
 </html>
